@@ -1,0 +1,25 @@
+- aws started first services Simple Queue servces around 2004
+- aws is collection of Cloud Computing Services that can work together or independently and Run or Supports a Computer Program
+- some jobs depend on aws because Low cost and Easy Scalability and high security .
+- pay what is use for it no extra charge. we can solve latency problem with aws best because aws have largest number os data servers in word
+- and they are present in different geographical location so latecy problem can easy solve by aws 
+-  Netflex whole thing deployed on aws . And aws provide security with Scalibility .
+-  Microsoft started cloud service in 2010 . Best place to run Microsoft product
+- AWS have better web console in compare to Azure and google cloud
+- google cloud started in public at 2011 and started in 2008
+- Heruku started in 2007 on that time only for rubey  
+- Four major aws servcies = EC2 , S3, RDS,Route53
+- EC2(Elastic Compute Cloud) ,Simple Storage Services(S3),Relational Database Service(RDS)
+- EC2 ========================================================
+- it is instance of computer  . you can use it to run an application , be it a web application or local.
+- it can be used to do all type computing like act as virtual desktop ,they have install some special softwarre that can do all sort of things means we can do all type computing.
+- it is elastic in computing means we can increase runing computing power and decrese computing power.
+- EBS(Elastic Block Storage) used to store EC2 file system where S3 used to store storage and serving file .
+- EC2 charge per hour depan on type os instance and AMI(application machine image) type
+
+- S3=============================================================
+- it is used by aws to store files .the largest file can be stored is 5 TB and the largest file size that can upload in a single put operation is 5 GB .
+- Bucket is fundamental structure of it 
+- it is used to trigger the evets when objects are added/modified/ deleted. it preser older versions of objects.
+- it is used to replicate object across regions.
+- 
