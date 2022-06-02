@@ -15,11 +15,58 @@
 - it can be used to do all type computing like act as virtual desktop ,they have install some special softwarre that can do all sort of things means we can do all type computing.
 - it is elastic in computing means we can increase runing computing power and decrese computing power.
 - EBS(Elastic Block Storage) used to store EC2 file system where S3 used to store storage and serving file .
-- EC2 charge per hour depan on type os instance and AMI(application machine image) type
+- EC2 charge per hour depend on type of instance(size) and AMI(application machine image) type
+On demand >Reserved instance > Spot instance
 
-- S3=============================================================
+- S3 =============================================================
 - it is used by aws to store files .the largest file can be stored is 5 TB and the largest file size that can upload in a single put operation is 5 GB .
 - Bucket is fundamental structure of it 
-- it is used to trigger the evets when objects are added/modified/ deleted. it preser older versions of objects.
+- it is used to trigger the evets when objects are added/modified/ deleted. it preserve older versions of objects.
 - it is used to replicate object across regions.
-- 
+
+- RDS(Relational Database Service) ================================
+- is collection of aws services for maneged relational databases
+- we called datbase maneged because aws take care of all backups,software updates and infrastructure for database .
+- RDS Databases run on EC2 instances. Cost depends on type of Database + Region + type of EC2 instances
+- AWS provide non relational database services but that donot come under it.
+
+- Route53 =========================================================
+- it is used to DNS manegment both inside and outside AWS
+- DNS(Domain name System) System that translate human - readable URLs to IP address
+- its cost depend on hosted zone,Queries 
+- AWS providing 165 services
+
+Elastic Beanstalk(EB)  ========================
+- it make in  deploying process very easy when we deply our appliaction on EC2 unless we need to do lot of staff.
+- because it mange all staff required to deployed automaticlly EB gives you an easy-to -deploy screen listing them all where all versions stored in  S3.
+- it provide montering Dashborad that help how our application behave
+- it also provide the functionality to easily pull the logs from all of your instance so you can figure out what is going on.
+- it is free you have to charge fro EC2 instance ,load balancer and S3 seperately.
+Lambda  ===================================
+Fucntion as service or serverless . you give your ode to lambdaa it will run it as many server required you donot have to tell number of server .
+it will figure out how much serer is required .a nd you have to pay if your code is running .
+Lambda structure is a function . a function is a bundle of code with a specified execution 
+entry point. and it configured with platform such as node,Python,Go,or other languages and invocation targets such as API Gateway .
+and some other configuration.
+lambada is great for small and irregular task.
+
+Dynamo DB  ======================================
+it is maneged NoSQL database service from AWS that supports both document and key value store models.
+we get unlimited ,elastic storage,No hardware choices and pay only for what you use .it basic work on table with through put is no of read / write operations.
+
+Virtual Private Cloud  ===================================
+it allows you to secure your resorces into group that follow access rules and share a logical space .
+VPC(Virtual Private cloud) have two subnet 1) Public subnet(Internet Access) 2) Private subnet(No Internet Access)
+its free no charge
+
+Cloudwatch  ================================
+it is integrating with all other resources in aws it is used to monitering and alarming and this is two main functionaling of Cloudwatch
+its pricing depend on resgion.
+
+Cloud Front =================================
+it is content delivery network that allows you to serves files globally with very fast connections .
+
+Software Development Kits are Code libraries that shorten or simplify complex operations .
+with sdk we can perform following operations like Modify CloudWatch Rules,Invalidate CloudFront Distribution, Read/Write to RDS
+we can do all things with command line interface also which we have did previously.
+ 
