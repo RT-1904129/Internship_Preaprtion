@@ -1,7 +1,7 @@
 public class strings {
     public static void main(String [] args){
         // There is two way to create string 
-        // 1- string str = new string("Harry");
+        // 1- String str = new String("Harry");
         // if same one more  object created by than str1 != str2 ;
         // 2- second given below 
         String name = "Harry";
