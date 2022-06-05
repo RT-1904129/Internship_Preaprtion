@@ -17,7 +17,7 @@ public class Shyam{
 // for compilation type ---- javac file name
 // and than for execting it -----java (file name without extension)
 // For example ---- javac Shyam.java  <==== for compilation
-//             ---- java Shyam          <========= for excution
+//             ---- java Shyam          <========= for excution(Interpratation)
 
 
 //In naming convetion of varile alphabate,char,_,$,digit(but not initially)
