@@ -1,0 +1,41 @@
+def func1
+   i = 0
+   while i<=2
+      puts "func1 at: #{Time.now}"
+      sleep(2)
+      i = i+1
+   end
+end
+
+def func2
+   j = 0
+   while j<=2
+      puts "func2 at: #{Time.now}"
+      sleep(1)
+      j = j+1
+   end
+end
+
+puts "Started At #{Time.now}"
+t1 = Thread.new{func1()}
+t2 = Thread.new{func2()}
+# wait unles any thread to finish by calling Thread.join
+
+t1.join
+t2.join
+puts "End at #{Time.now}"
+
+
+a= [1,2,3,4]
+threads = []
+for i in a
+    threads <<Thread.new(i) {
+        |local|
+        puts " starting a new thread - #{local}"
+        new = local * 10
+        puts"#{local} multiplied with 10 is #{new}"
+        puts "ending the thred - #{local}"
+    }
+end
+
+threads.each {|a| a.join}

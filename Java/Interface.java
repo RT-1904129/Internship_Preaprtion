@@ -72,6 +72,7 @@ class AvonCycle implements Bicycle, HornBicycle{
 //     private void greet(){
 //         System.out.println("Good Morning");
 //     }
+        // by using default we can add property in interface only
 //     default void record4KVideo(){
 //         greet();
 //         System.out.println("Recording in 4k...");

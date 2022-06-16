@@ -39,3 +39,28 @@ else
     puts "improve"
 end
 
+$age =  5
+case $age
+when 0 .. 2
+   puts "baby"
+when 3 .. 6
+   puts "little child"
+when 7 .. 12
+   puts "child"
+when 13 .. 18
+   puts "youth"
+else
+   puts "adult"
+end
+
+
+(0..5).each do |i|
+    puts "Value of local variable is #{i}"
+ end
+
+ for i in 0..5
+    if i > 2 then
+       break
+    end
+    puts "Value of local variable is #{i}"
+ end

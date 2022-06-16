@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+		<!--  it tell all error -->
+
+	<!-- <bean id = "bike" class = "com.di.Bike">
+	<property name = "color" value = "Blue"></property>
+	</bean> 
+	 it will convert into 
+	 Bike bike = new Bike();
+	 bike.setColor("Blue");
+	
+	-->
+	
+	<!--  
+	<bean id = "bike" class = "com.di.Bike">
+	<constructor-arg name = "color" value = "Blue"></constructor-arg>
+	</bean>
+	it will convert into 
+	 Bike bike = new Bike("Blue");
+	
+	-->
+	
+	<!--  
+	<bean id = "bike" class = "com.di.Bike">
+	<constructor-arg name = "engine" >
+		<bean class = "com.di.Engine"></bean>
+	</constructor-arg>
+	</bean>
+	id= is refreance of class class = whole path of class object which object you want to create 
+	 beans create object  
+	 Bike bike = new Bike()
+	 bike.engine = new Engine() 
+	 
+	<bean id = "car" class = "com.di.Car">
+	<constructor-arg name = "engine" >
+		<bean class = "com.di.Engine"></bean>
+	</constructor-arg>
+	</bean>
+	
+	-->
+	<bean id = "enginObj" class = "com.di.Engine"></bean>
+	
+	<!--  In this case Only one engine Bean object is created in above case two object of seperate object of engine is created -->
+	
+	<bean id = "bike" class = "com.di.Bike">
+	<constructor-arg name = "engine"  ref = "enginObj"></constructor-arg>
+	</bean>
+	
+	<bean id = "car" class = "com.di.Car">
+	<constructor-arg name = "engine"  ref = "enginObj"></constructor-arg>
+	</bean>
+	
+	
+	
+</beans>

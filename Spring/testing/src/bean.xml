@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+		<!--  it tell all error -->
+
+	<bean id = "engine" class = "com.testing.Bike"></bean>
+	<!-- id= is refreance of class class = whole path of class object which object you want to create -->
+	<!-- beans create object  -->
+</beans>

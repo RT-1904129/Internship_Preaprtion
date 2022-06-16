@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   <context:annotation-config/>
+		<!--  it tell all error -->
+
+	
+	 <!-- 
+	 <bean id = "deptobj" class = "com.autowire.HRDept"></bean> 
+	<bean id = "company" class = "com.autowire.Company">
+	<constructor-arg name = "dept" ref = "deptobj" ></constructor-arg>
+	</bean>
+	
+	  
+	 Constructor method by default annotation if off we need to on it  by above ew bean code
+	 <bean id = "deptobj" class = "com.autowire.HRDept"></bean>
+	 <bean id = "company" class = "com.autowire.Company" autowire ="constructor"/>
+	 -->
+	  
+	 <!-- it will chcek first by type and than by name so thats why we will put same id as dept in class
+	 byName==> (type with refName) using setter method
+	 byType ==> (Only Type) using setter method
+	 Default ==> by using setter method or by using constructor 
+	 <bean id = "dept" class = "com.autowire.HRDept"></bean>
+	 <bean id = "company" class = "com.autowire.Company" autowire ="byName"/>
+	 
+	 
+	 <bean id = "dept" class = "com.autowire.HRDept"></bean>
+	 <bean id = "company" class = "com.autowire.Company" autowire ="byType"/>
+	 
+	 Now we are using Autowired and Quilifier
+	 -->
+	 
+	 <bean id = "dept" class = "com.autowire.HRDept"></bean>
+	 <bean id = "dept2" class = "com.autowire.ITDept"></bean>
+	 <bean id = "company" class = "com.autowire.Company"/>
+	 
+	
+<!-- 
+constructor
+byName
+byType
+default
+ -->	
+	
+	
+</beans>
