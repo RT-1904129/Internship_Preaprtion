@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<h1>Hello Index Page</h1>
-	<a href= "result?val=500">send data to person</a>
-	
+		Hello I am rishabh
+		<h1> your value is : ${value}</h1>
 </body>
+</html>
